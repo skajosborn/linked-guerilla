@@ -145,7 +145,7 @@ import MessagingInterface from '../components/MessagingInterface';
           <div>
             <div class="space-y-4">
               <!-- Step 1: Find Prospects -->
-              <div class="bg-gray-50 p-4 rounded-lg shadow-sm hover:scale-105 transition-all duration-300">
+              <div class="bg-gray-50 p-4 rounded-lg shadow-md hover:scale-105 transition-all duration-300">
             <div class="flex gap-4">
               <div class="flex-shrink-0">
                 <div class="w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center">
@@ -164,7 +164,7 @@ import MessagingInterface from '../components/MessagingInterface';
           </div>
 
               <!-- Step 2: Write Messaging -->
-              <div class="bg-gray-50 p-4 rounded-lg shadow-sm hover:scale-105 transition-all duration-300">
+              <div class="bg-gray-50 p-4 rounded-lg shadow-md hover:scale-105 transition-all duration-300">
             <div class="flex gap-4">
               <div class="flex-shrink-0">
                 <div class="w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center">
@@ -183,7 +183,7 @@ import MessagingInterface from '../components/MessagingInterface';
           </div>
 
               <!-- Step 3: Consultation -->
-              <div class="bg-gray-50 p-4 rounded-lg shadow-sm hover:scale-105 transition-all duration-300">
+              <div class="bg-gray-50 p-4 rounded-lg shadow-md hover:scale-105 transition-all duration-300">
             <div class="flex gap-4">
               <div class="flex-shrink-0">
                 <div class="w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center">
@@ -202,7 +202,7 @@ import MessagingInterface from '../components/MessagingInterface';
           </div>
 
               <!-- Step 4: Follow Up -->
-              <div class="bg-gray-50 p-4 rounded-lg shadow-sm hover:scale-105 transition-all duration-300">
+              <div class="bg-gray-50 p-4 rounded-lg shadow-md hover:scale-105 transition-all duration-300">
             <div class="flex gap-4">
               <div class="flex-shrink-0">
                 <div class="w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center">
@@ -280,13 +280,13 @@ import MessagingInterface from '../components/MessagingInterface';
         <div class="text-center mb-12">
           <h2 class="text-4xl font-bold text-gray-900 mb-4">Most people get:</h2>
           <div class="flex justify-center mt-6">
-            <img src="/gorilla4.png" alt="Linked Guerilla" class="h-32 w-auto" />
+            <img src="/gorilla4.png" alt="Linked Guerilla" class="h-48 w-auto" />
           </div>
         </div>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- 6 Warm Responses -->
-          <div class="bg-gray-50 p-8 rounded-xl">
+          <div class="bg-gray-50 p-8 rounded-xl shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer">
             <div class="text-center mb-6">
               <div class="text-5xl font-bold text-primary-600 mb-2">6</div>
               <h3 class="text-2xl font-bold text-gray-900">Warm Responses / mo</h3>
@@ -297,7 +297,7 @@ import MessagingInterface from '../components/MessagingInterface';
           </div>
 
           <!-- 3 Appointments -->
-          <div class="bg-gray-50 p-8 rounded-xl">
+          <div class="bg-gray-50 p-8 rounded-xl shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer">
             <div class="text-center mb-6">
               <div class="text-5xl font-bold text-primary-600 mb-2">3</div>
               <h3 class="text-2xl font-bold text-gray-900">Appointments / mo</h3>
@@ -308,7 +308,7 @@ import MessagingInterface from '../components/MessagingInterface';
           </div>
 
           <!-- 1 Closed Deal -->
-          <div class="bg-gray-50 p-8 rounded-xl">
+          <div class="bg-gray-50 p-8 rounded-xl shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer">
             <div class="text-center mb-6">
               <div class="text-5xl font-bold text-primary-600 mb-2">1</div>
               <h3 class="text-2xl font-bold text-gray-900">Closed Deal / 6 weeks</h3>
@@ -323,7 +323,7 @@ import MessagingInterface from '../components/MessagingInterface';
   </section>
 
   <!-- About Section -->
-  <section id="about" class="py-20">
+  <section id="about" class="py-20 bg-gray-50">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
         <div class="text-center mb-12">
@@ -379,6 +379,17 @@ import MessagingInterface from '../components/MessagingInterface';
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Organic Outreach Section -->
+  <section id="organic-outreach" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex justify-center">
+          <img src="/organic-reach.png" alt="Organic Outreach" class="w-full max-w-5xl h-auto" />
         </div>
       </div>
     </div>
@@ -502,177 +513,6 @@ import MessagingInterface from '../components/MessagingInterface';
               Get Started
             </a>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Expected Results Section -->
-  <section id="expected-results" class="py-20 bg-primary-800 text-white relative overflow-hidden">
-    <!-- Background pattern overlay -->
-    <div class="absolute inset-0 opacity-10">
-      <div class="absolute inset-0" style="background-image: radial-gradient(circle, rgba(255,255,255,0.1) 1px, transparent 1px); background-size: 20px 20px;"></div>
-    </div>
-    
-    <div class="container mx-auto px-4 relative z-10">
-      <div class="max-w-6xl mx-auto">
-        <h2 class="text-4xl font-bold text-center mb-8">Expected Results</h2>
-        <div class="flex justify-center mb-12">
-          <img src="/gorilla4.png" alt="Linked Guerilla" class="h-32 w-auto" />
-        </div>
-        
-        <div class="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8">
-          <!-- Warm Replies -->
-          <div class="text-center flex-1 max-w-xs">
-            <div class="flex justify-center mb-6">
-              <div class="w-20 h-20 rounded-full border-2 border-primary-300 flex items-center justify-center">
-                <svg class="w-10 h-10 text-primary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
-                </svg>
-              </div>
-            </div>
-            <div class="text-5xl font-bold mb-2">6-10</div>
-            <h3 class="text-xl font-semibold mb-3">Warm Replies / Month</h3>
-            <p class="text-primary-200 text-sm">
-              Qualified responses from your ICP using approved messaging.
-            </p>
-          </div>
-
-          <!-- Arrow 1 -->
-          <div class="hidden md:flex items-center">
-            <svg class="w-8 h-8 text-primary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-            </svg>
-          </div>
-
-          <!-- Booked Appointments -->
-          <div class="text-center flex-1 max-w-xs">
-            <div class="flex justify-center mb-6">
-              <div class="w-20 h-20 rounded-full border-2 border-primary-300 flex items-center justify-center">
-                <svg class="w-10 h-10 text-primary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                </svg>
-              </div>
-            </div>
-            <div class="text-5xl font-bold mb-2">2-4</div>
-            <h3 class="text-xl font-semibold mb-3">Booked Appointments / Month</h3>
-            <p class="text-primary-200 text-sm">
-              Average reply-to-booking conversion rate.
-            </p>
-          </div>
-
-          <!-- Arrow 2 -->
-          <div class="hidden md:flex items-center">
-            <svg class="w-8 h-8 text-primary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-            </svg>
-          </div>
-
-          <!-- Closed Deal -->
-          <div class="text-center flex-1 max-w-xs">
-            <div class="flex justify-center mb-6">
-              <div class="w-20 h-20 rounded-full border-2 border-primary-300 flex items-center justify-center">
-                <svg class="w-10 h-10 text-primary-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-              </div>
-            </div>
-            <div class="text-5xl font-bold mb-2">1</div>
-            <h3 class="text-xl font-semibold mb-3">Closed Deal in ~6 Weeks</h3>
-            <p class="text-primary-200 text-sm">
-              Most clients recoup their investment within the first cycle.
-            </p>
-          </div>
-        </div>
-
-        <div class="mt-12 text-center">
-          <p class="text-primary-200 text-sm italic">
-            * Results vary by industry, offer, and response handling.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Organic Outreach Section -->
-  <section id="organic-outreach" class="py-20 bg-white">
-    <div class="container mx-auto px-4">
-      <div class="max-w-5xl mx-auto">
-        <!-- Circular Flow Diagram -->
-        <div class="relative" style="min-height: 500px;">
-          <!-- Connecting Lines (SVG overlay) -->
-          <svg class="absolute inset-0 w-full h-full pointer-events-none" style="z-index: 1;">
-            <!-- Line from Organic Outreach to Copywriting -->
-            <line x1="15%" y1="85%" x2="20%" y2="30%" stroke="#d1d1cd" stroke-width="2"/>
-            <!-- Line from Copywriting to Expert Prospecting -->
-            <line x1="20%" y1="30%" x2="50%" y2="10%" stroke="#d1d1cd" stroke-width="2"/>
-            <!-- Line from Expert Prospecting to Data-driven -->
-            <line x1="50%" y1="10%" x2="80%" y2="30%" stroke="#d1d1cd" stroke-width="2"/>
-            <!-- Line from Data-driven to Agency Oversight -->
-            <line x1="80%" y1="30%" x2="85%" y2="85%" stroke="#d1d1cd" stroke-width="2"/>
-            <!-- Line from Agency Oversight back to Organic Outreach -->
-            <line x1="85%" y1="85%" x2="15%" y2="85%" stroke="#d1d1cd" stroke-width="2"/>
-          </svg>
-
-          <!-- Node 1: Expert Prospecting (Top Center) -->
-          <div class="absolute top-0 left-1/2 transform -translate-x-1/2" style="z-index: 2;">
-            <div class="bg-primary-100 w-32 h-32 rounded-full flex flex-col items-center justify-center border-2 border-primary-200 shadow-md">
-              <svg class="w-10 h-10 text-primary-600 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-              </svg>
-              <span class="text-xs font-semibold text-primary-700 text-center px-2">Expert Prospecting</span>
-            </div>
-          </div>
-
-          <!-- Node 2: Copywriting Included (Top Left) -->
-          <div class="absolute top-24 left-0" style="z-index: 2;">
-            <div class="bg-primary-100 w-32 h-32 rounded-full flex flex-col items-center justify-center border-2 border-primary-200 shadow-md">
-              <svg class="w-10 h-10 text-primary-600 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-              </svg>
-              <span class="text-xs font-semibold text-primary-700 text-center px-2">Copywriting Included</span>
-            </div>
-          </div>
-
-          <!-- Node 3: Data-driven Optimization (Top Right) -->
-          <div class="absolute top-24 right-0" style="z-index: 2;">
-            <div class="bg-primary-100 w-32 h-32 rounded-full flex flex-col items-center justify-center border-2 border-primary-200 shadow-md">
-              <svg class="w-10 h-10 text-primary-600 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
-              </svg>
-              <span class="text-xs font-semibold text-primary-700 text-center px-2">Data-driven Optimization</span>
-            </div>
-          </div>
-
-          <!-- Node 4: Organic Outreach (Bottom Left - Highlighted) -->
-          <div class="absolute bottom-0 left-0" style="z-index: 2;">
-            <div class="bg-primary-600 w-32 h-32 rounded-full flex flex-col items-center justify-center border-2 border-primary-700 shadow-lg">
-              <svg class="w-10 h-10 text-white mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
-              </svg>
-              <span class="text-xs font-semibold text-white text-center px-2">Organic Outreach</span>
-            </div>
-          </div>
-
-          <!-- Node 5: Agency Oversight (Bottom Right) -->
-          <div class="absolute bottom-0 right-0" style="z-index: 2;">
-            <div class="bg-primary-100 w-32 h-32 rounded-full flex flex-col items-center justify-center border-2 border-primary-200 shadow-md">
-              <svg class="w-10 h-10 text-primary-600 mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
-              </svg>
-              <span class="text-xs font-semibold text-primary-700 text-center px-2">Agency Oversight</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Explanatory Text -->
-        <div class="mt-16 space-y-4">
-          <p class="text-lg font-bold text-gray-900 text-center">
-            The only way we can hit these numbers is with organic outreach. Organic means 0 additional costs to you and it means higher conversion rates.
-          </p>
-          <p class="text-base font-semibold text-gray-700 text-center">
-            We can (and sometimes do) augment with remarketing PPC, intermediaries like ScoreApp, and other nurturing techniques, but this is not required to see results.
-          </p>
         </div>
       </div>
     </div>
