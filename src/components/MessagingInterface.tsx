@@ -20,7 +20,7 @@ const messages: Message[] = [
     date: "Dec 18",
     preview: "That's a hell of an idea. How long have...",
     fullMessage: "That's a hell of an idea.\n\nHow long have you been working on this? Have you approached any other firms? How much ownership do you currently hold?\n\nOf course, we'll need to investigate your budget and my tech team will do a deeper dive into your prototype, but so far so good.\n\nGive me a call back by Tuesday.\n\nThanks, Richard\n(704)966-9026",
-    avatar: "👨‍💼"
+    avatar: "/mark.webp"
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ const messages: Message[] = [
     date: "Dec 18",
     preview: "Very interesting. I had expeirmented wit...",
     fullMessage: "Very interesting.\n\nI had expeirmented with some of these prototypes a few years back, but by the time the contract was up there were no deliverables. I'd still like to see some improvements in batteries and I'm sure my investors would as well.\n\nIf you have some time this upcoming week, I can connect you with my energy guys and see if there's room for an acquisition.\n\nTalk to you then, Telon",
-    avatar: "👩‍💼"
+    avatar: "/barb.webp"
   },
   {
     id: 3,
@@ -40,7 +40,7 @@ const messages: Message[] = [
     date: "Dec 17",
     preview: "Phenomenal presentation. I'm looking to ...",
     fullMessage: "Phenomenal presentation.\n\nI'm looking to expand my portfolio in the tech sector, and your solution addresses a real market need. The numbers you presented are compelling.\n\nLet's schedule a call next week to discuss terms. I'm particularly interested in your growth projections and how you plan to scale.\n\nBest regards,\nOren",
-    avatar: "👴"
+    avatar: "/steve.webp"
   },
   {
     id: 4,
@@ -50,7 +50,7 @@ const messages: Message[] = [
     date: "Dec 17",
     preview: "I really love your work! I'm actually I...",
     fullMessage: "I really love your work!\n\nI'm actually interested in exploring a potential partnership. Your approach to lead generation aligns perfectly with what we're building.\n\nWould you be open to a strategic collaboration? I think there's significant synergy between our companies.\n\nLet me know when you're available for a discussion.\n\nJeremy",
-    avatar: "👨"
+    avatar: "/jer.webp"
   },
   {
     id: 5,
@@ -60,7 +60,7 @@ const messages: Message[] = [
     date: "Dec 16",
     preview: "I'm hooked. I'm looking to book more",
     fullMessage: "I'm hooked.\n\nI'm looking to book more time with your team. The results you've shown are exactly what we need to accelerate our growth.\n\nCan we set up a demo for next week? I'd like to bring in our sales director to see how this integrates with our current workflow.\n\nLooking forward to it!\n\nToby",
-    avatar: "😊"
+    avatar: "/man.webp"
   },
   {
     id: 6,
@@ -70,7 +70,7 @@ const messages: Message[] = [
     date: "Dec 16",
     preview: "Hello, I appreciate your proposition.",
     fullMessage: "Hello,\n\nI appreciate your proposition. We've been looking for a solution like this for a while now.\n\nThe ROI you've demonstrated is impressive. I'd like to discuss how we can implement this across our organization.\n\nCan we schedule a call this week?\n\nBest,\nKevin",
-    avatar: "👨‍💻"
+    avatar: "/kevin.webp"
   }
 ];
 
@@ -150,8 +150,12 @@ export default function MessagingInterface() {
                 }`}
               >
                 <div className="flex items-start gap-3">
-                  <div className="w-12 h-12 rounded-full bg-gray-300 flex items-center justify-center text-2xl flex-shrink-0">
-                    {message.avatar}
+                  <div className="w-12 h-12 rounded-full bg-gray-300 flex items-center justify-center flex-shrink-0 overflow-hidden">
+                    <img 
+                      src={message.avatar} 
+                      alt={message.name}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center justify-between mb-1">
@@ -173,8 +177,12 @@ export default function MessagingInterface() {
         <div className="flex-1 flex flex-col bg-white">
           <div className="p-6 border-b border-gray-200">
             <div className="flex items-center gap-4">
-              <div className="w-16 h-16 rounded-full bg-gray-300 flex items-center justify-center text-4xl">
-                {selectedMessage.avatar}
+              <div className="w-16 h-16 rounded-full bg-gray-300 flex items-center justify-center overflow-hidden flex-shrink-0">
+                <img 
+                  src={selectedMessage.avatar} 
+                  alt={selectedMessage.name}
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="flex-1">
                 <div className="flex items-center gap-2 mb-1">
