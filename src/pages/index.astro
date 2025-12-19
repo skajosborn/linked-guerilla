@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import MessagingInterface from '../components/MessagingInterface';
+import RotatingReviews from '../components/RotatingReviews';
 ---
 
 <Layout>
@@ -544,6 +545,21 @@ import MessagingInterface from '../components/MessagingInterface';
             </a>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section id="reviews" class="py-20 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-gray-900 mb-4">What Our Clients Say</h2>
+          <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+            Don't just take our word for it - see what our clients have to say about their results
+          </p>
+        </div>
+        <RotatingReviews client:load />
       </div>
     </div>
   </section>
