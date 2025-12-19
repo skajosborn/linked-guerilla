@@ -8,33 +8,70 @@ import MessagingInterface from '../components/MessagingInterface';
 <Layout>
   <Header />
   
-  <!-- Hero Section -->
-  <section class="bg-gradient-to-br from-gray-900 to-primary-800 text-white py-20">
-    <div class="container mx-auto px-4">
-      <div class="max-w-3xl mx-auto text-center">
-        <div class="mb-8 flex justify-center">
-          <img src="/Asset-3.svg" alt="Linked Guerilla" class="h-32 w-auto" style="filter: brightness(0) saturate(100%) invert(35%) sepia(8%) saturate(800%) hue-rotate(30deg) brightness(0.95) contrast(0.9);" />
+<!-- Hero Section (MATCHES MOCKUP) -->
+
+
+  <!-- Hero background -->
+  <div
+    class="relative text-white min-h-[640px] flex items-center bg-cover bg-center bg-no-repeat"
+    style="background-image: url('/bg.png');"
+  >
+
+    <div class="container mx-auto px-4 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <!-- Left: Huge gorilla silhouette with glow behind it -->
+        <div class="lg:col-span-5 flex justify-center lg:justify-start relative">
+          <!-- Strong glow halo behind gorilla -->
+          <div class="absolute inset-0 flex items-center justify-center lg:justify-start pointer-events-none">
+            <div class="w-[650px] h-[650px] rounded-full blur-3xl opacity-50" style="background: radial-gradient(circle, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.4) 25%, rgba(180,190,150,0.3) 40%, transparent 70%);"></div>
+            <div class="absolute w-[550px] h-[550px] rounded-full blur-2xl opacity-60" style="background: radial-gradient(circle, rgba(255,255,255,0.5) 0%, rgba(180,190,150,0.3) 30%, transparent 60%);"></div>
+          </div>
+          <img
+            src="/Asset-3.svg"
+            alt="Gorilla silhouette"
+            class="w-[520px] max-w-full h-auto relative z-10"
+            style="
+              filter:
+                brightness(0) saturate(100%) invert(42%) sepia(8%) saturate(1200%) hue-rotate(40deg) brightness(0.9) contrast(1.1)
+                drop-shadow(0 10px 40px rgba(0,0,0,0.6));
+              opacity: 0.95;
+            "
+          />
         </div>
-        <h1 class="text-5xl md:text-6xl font-bold mb-6">
-          LinkedIn Management
-        </h1>
-        <p class="text-xl md:text-2xl mb-8 text-primary-100">
-          Maximize B2B Leads, Sales, and Hiring
-        </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="#contact" class="bg-white text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
-            Get Started Today
-          </a>
-          <a href="#services" class="bg-gray-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transition">
-            Learn More
-          </a>
+
+        <!-- Right: Centered headline block (like the mockup) -->
+        <div class="lg:col-span-7 text-center lg:text-left">
+          <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight text-white" style="text-shadow: 0 0 30px rgba(255,255,255,0.5), 0 0 60px rgba(255,255,255,0.3), 0 0 90px rgba(255,255,255,0.15);">
+            <span class="text-[#6B7E4F]" style="text-shadow: none;">LinkedIn</span> Management
+          </h1>
+
+          <p class="text-xl md:text-2xl mt-5 text-white/85">
+            Maximize B2B Leads, Sales, and Hiring
+          </p>
+
+          <div class="mt-9 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <a
+              href="#contact"
+              class="bg-[#f4f4f1] text-[#1f2326] px-8 py-3 rounded-lg font-semibold hover:bg-white transition shadow-sm"
+            >
+              Get Started Today
+            </a>
+
+            <a
+              href="#services"
+              class="bg-[#1f2326] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#2a2d2f] transition shadow-sm"
+            >
+              Learn More
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Services Section -->
-  <section id="services" class="py-20 bg-gray-50">
+  <section id="services" class="py-20 bg-primary-200">
     <div class="container mx-auto px-4">
       <div class="max-w-5xl mx-auto">
         <div class="text-center mb-16">
@@ -127,7 +164,7 @@ import MessagingInterface from '../components/MessagingInterface';
   </section>
 
   <!-- How It Works Section -->
-  <section id="how-it-works" class="py-12 bg-white">
+  <section id="how-it-works" class="py-12 bg-gray-100">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-4xl font-bold text-gray-900 mb-8 text-center">How it works</h2>
@@ -136,7 +173,7 @@ import MessagingInterface from '../components/MessagingInterface';
           <!-- Left Side - Image Container (no background) -->
           <div class="flex justify-center lg:justify-start">
             <img 
-              src="/gorilla.png" 
+              src="/gorillabluenobg.png" 
               alt="Linked Guerilla" 
               class="w-full max-w-m h-auto"
             />
@@ -226,7 +263,7 @@ import MessagingInterface from '../components/MessagingInterface';
   </section>
 
   <!-- Interactive Messaging Section -->
-  <section id="messaging-demo" class="py-20 bg-gray-50">
+  <section id="messaging-demo" class="py-20 bg-primary-200">
     <div class="container mx-auto px-4">
       <div class="max-w-6xl mx-auto">
         <div class="text-center mb-12">
@@ -275,13 +312,13 @@ import MessagingInterface from '../components/MessagingInterface';
   </section>
 
   <!-- Results Section -->
-  <section id="results" class="py-20 bg-white">
+  <section id="results" class="py-20 bg-primary-100">
     <div class="container mx-auto px-4">
       <div class="max-w-5xl mx-auto">
         <div class="text-center mb-12">
           <h2 class="text-4xl font-bold text-gray-900 mb-4">Most people get:</h2>
           <div class="flex justify-center mt-6">
-            <img src="/gorilla4.png" alt="Linked Guerilla" class="h-64 w-auto" />
+            <img src="/gorilla3color.png" alt="Linked Guerilla" class="h-64 w-auto" />
           </div>
         </div>
         
@@ -324,7 +361,7 @@ import MessagingInterface from '../components/MessagingInterface';
   </section>
 
   <!-- About Section -->
-  <section id="about" class="py-20 bg-gray-50">
+  <section id="about" class="py-20 bg-white">
     <div class="container mx-auto px-4">
       <div class="max-w-4xl mx-auto">
         <div class="text-center mb-12">
@@ -389,7 +426,7 @@ import MessagingInterface from '../components/MessagingInterface';
   </section>
 
   <!-- Pricing Section -->
-  <section id="pricing" class="py-20 bg-white">
+  <section id="pricing" class="py-20 bg-gray-100">
     <div class="container mx-auto px-4">
       <div class="max-w-5xl mx-auto">
         <div class="text-center mb-12">
@@ -512,7 +549,7 @@ import MessagingInterface from '../components/MessagingInterface';
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-20 bg-gray-50">
+  <section id="contact" class="py-20 bg-primary-200">
     <div class="container mx-auto px-4">
       <div class="max-w-6xl mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
