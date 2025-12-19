@@ -90,14 +90,14 @@ export default function RotatingReviews() {
         {displayedReviews.map((review, idx) => (
           <div
             key={`${review.id}-${currentIndex}-${idx}`}
-            className="bg-gray-900 border-2 border-blue-500 rounded-lg p-6 shadow-md transition-all duration-500"
+            className="bg-gray-900 border-2 border-[#6B7E4F] rounded-lg p-6 shadow-md transition-all duration-500"
           >
             {/* Stars */}
             <div className="flex gap-1 mb-4">
               {[...Array(5)].map((_, i) => (
                 <svg
                   key={i}
-                  className="w-5 h-5 text-blue-400"
+                  className="w-5 h-5 text-yellow-300"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
