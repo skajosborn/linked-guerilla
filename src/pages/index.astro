@@ -167,24 +167,12 @@ import RotatingReviews from '../components/RotatingReviews';
   <!-- How It Works Section -->
   <section id="how-it-works" class="py-12 bg-white">
     <div class="container mx-auto px-4">
-      <div class="max-w-4xl mx-auto">
-        <h2 class="text-4xl font-bold text-gray-900 mb-8 text-center">How it works</h2>
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">How it works</h2>
         
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
-          <!-- Left Side - Image Container (no background) -->
-          <div class="flex justify-center lg:justify-start">
-            <img 
-              src="/gorillabluenobg.png" 
-              alt="Linked Guerilla" 
-              class="w-full max-w-m h-auto"
-            />
-          </div>
-
-          <!-- Right Side - Text Container -->
-          <div class="max-w-md">
-            <div class="space-y-3">
-              <!-- Step 1: Find Prospects -->
-              <div class="bg-primary-50 p-3 rounded-lg shadow-md hover:scale-105 transition-all duration-300">
+        <div class="relative grid grid-cols-1 md:grid-cols-3 grid-rows-2 gap-6 items-center justify-items-center max-w-5xl mx-auto">
+          <!-- Top Left - Step 1: Find Prospects -->
+          <div class="bg-primary-50 p-4 rounded-lg shadow-md hover:scale-105 transition-all duration-300 md:col-start-1 md:row-start-1 md:justify-self-end">
             <div class="flex gap-3">
               <div class="flex-shrink-0">
                 <div class="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center">
@@ -202,8 +190,8 @@ import RotatingReviews from '../components/RotatingReviews';
             </div>
           </div>
 
-              <!-- Step 2: Write Messaging -->
-              <div class="bg-primary-50 p-3 rounded-lg shadow-md hover:scale-105 transition-all duration-300">
+          <!-- Top Right - Step 2: Write Messaging -->
+          <div class="bg-primary-50 p-4 rounded-lg shadow-md hover:scale-105 transition-all duration-300 md:col-start-3 md:row-start-1 md:justify-self-start">
             <div class="flex gap-3">
               <div class="flex-shrink-0">
                 <div class="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center">
@@ -221,8 +209,17 @@ import RotatingReviews from '../components/RotatingReviews';
             </div>
           </div>
 
-              <!-- Step 3: Consultation -->
-              <div class="bg-primary-50 p-3 rounded-lg shadow-md hover:scale-105 transition-all duration-300">
+          <!-- Center - Image -->
+          <div class="md:col-start-2 md:row-start-1 md:row-span-2 flex items-center justify-center">
+            <img 
+              src="/gorillabluenobg.png" 
+              alt="Linked Guerilla" 
+              class="w-full max-w-xs h-auto"
+            />
+          </div>
+
+          <!-- Bottom Left - Step 3: Consultation -->
+          <div class="bg-primary-50 p-4 rounded-lg shadow-md hover:scale-105 transition-all duration-300 md:col-start-1 md:row-start-2 md:justify-self-end">
             <div class="flex gap-3">
               <div class="flex-shrink-0">
                 <div class="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center">
@@ -240,8 +237,8 @@ import RotatingReviews from '../components/RotatingReviews';
             </div>
           </div>
 
-              <!-- Step 4: Follow Up -->
-              <div class="bg-primary-50 p-3 rounded-lg shadow-md hover:scale-105 transition-all duration-300">
+          <!-- Bottom Right - Step 4: Follow Up -->
+          <div class="bg-primary-50 p-4 rounded-lg shadow-md hover:scale-105 transition-all duration-300 md:col-start-3 md:row-start-2 md:justify-self-start">
             <div class="flex gap-3">
               <div class="flex-shrink-0">
                 <div class="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center">
