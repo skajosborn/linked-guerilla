@@ -11,14 +11,84 @@
       </div>
     </a>
     <ul class="hidden md:flex space-x-6">
-      <li><a href="/" class="text-sm text-gray-700 hover:text-primary-600 transition">Home</a></li>
-      <li><a href="#services" class="text-sm text-gray-700 hover:text-primary-600 transition">Services</a></li>
-      <li><a href="#about" class="text-sm text-gray-700 hover:text-primary-600 transition">About</a></li>
-      <li><a href="#contact" class="text-sm text-gray-700 hover:text-primary-600 transition">Contact</a></li>
+      <li><a href="#" id="nav-home" class="nav-link text-sm text-gray-700 hover:text-primary-600 transition" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Home</a></li>
+      <li><a href="#services" id="nav-services" class="nav-link text-sm text-gray-700 hover:text-primary-600 transition">Services</a></li>
+      <li><a href="#about" id="nav-about" class="nav-link text-sm text-gray-700 hover:text-primary-600 transition">About</a></li>
+      <li><a href="#contact" id="nav-contact" class="nav-link text-sm text-gray-700 hover:text-primary-600 transition">Contact</a></li>
     </ul>
     <a href="#contact" class="bg-primary-600 text-white text-sm px-4 py-1.5 rounded-lg hover:bg-primary-700 transition">
       Get Started
     </a>
   </nav>
 </header>
+
+<script>
+  function updateActiveNavLink() {
+    const sections = ['home', 'services', 'about', 'contact'];
+    const navLinks = sections.map(id => document.getElementById(`nav-${id}`));
+    
+    // Remove underline from all links
+    navLinks.forEach(link => {
+      if (link) link.classList.remove('underline');
+    });
+    
+    // Check if we're at the top of the page (home)
+    if (window.scrollY < 100) {
+      const homeLink = document.getElementById('nav-home');
+      if (homeLink) homeLink.classList.add('underline');
+      return;
+    }
+    
+    // Find the section currently in view
+    for (const sectionId of sections) {
+      if (sectionId === 'home') continue;
+      
+      const section = document.getElementById(sectionId);
+      if (!section) continue;
+      
+      const rect = section.getBoundingClientRect();
+      const isInView = rect.top <= 150 && rect.bottom >= 150;
+      
+      if (isInView) {
+        const navLink = document.getElementById(`nav-${sectionId}`);
+        if (navLink) {
+          navLink.classList.add('underline');
+          return;
+        }
+      }
+    }
+    
+    // If no section is in view, check which one is closest
+    let closestSection = null;
+    let closestDistance = Infinity;
+    
+    sections.forEach(sectionId => {
+      if (sectionId === 'home') return;
+      const section = document.getElementById(sectionId);
+      if (!section) return;
+      
+      const rect = section.getBoundingClientRect();
+      const distance = Math.abs(rect.top - 150);
+      
+      if (distance < closestDistance) {
+        closestDistance = distance;
+        closestSection = sectionId;
+      }
+    });
+    
+    if (closestSection) {
+      const navLink = document.getElementById(`nav-${closestSection}`);
+      if (navLink) navLink.classList.add('underline');
+    }
+  }
+  
+  // Update on scroll and on page load
+  window.addEventListener('scroll', updateActiveNavLink);
+  window.addEventListener('load', updateActiveNavLink);
+  
+  // Also handle hash changes (when clicking nav links)
+  window.addEventListener('hashchange', () => {
+    setTimeout(updateActiveNavLink, 100);
+  });
+</script>
 
