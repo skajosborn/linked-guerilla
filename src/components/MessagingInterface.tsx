@@ -99,7 +99,7 @@ export default function MessagingInterface() {
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-2xl overflow-hidden border border-gray-200" style={{ maxWidth: '900px', height: '400px' }}>
+    <div className="bg-white rounded-lg shadow-2xl overflow-hidden border border-gray-200" style={{ maxWidth: '900px', height: '300px' }}>
       {/* Header */}
       <div className="bg-gray-800 px-6 py-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
@@ -132,7 +132,7 @@ export default function MessagingInterface() {
         </div>
       </div>
 
-      <div className="flex h-full" style={{ height: 'calc(400px - 73px)' }}>
+      <div className="flex h-full" style={{ height: 'calc(300px - 73px)' }}>
         {/* Left Panel - Message List */}
         <div className="w-1/3 border-r border-gray-200 overflow-y-auto bg-gray-50">
           <div className="p-4 border-b border-gray-200 bg-white">
