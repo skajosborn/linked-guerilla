@@ -14,36 +14,37 @@ import RotatingReviews from '../components/RotatingReviews';
 
   <!-- Hero background -->
   <div
-    class="relative text-white min-h-[500px] flex items-center bg-cover bg-center bg-no-repeat"
-    style="background-image: url('/bg.png');"
+    class="relative text-white min-h-[500px] flex items-center bg-gray-400"
   >
 
     <div class="container mx-auto px-4 relative z-10">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-        <!-- Left: Huge gorilla silhouette with glow behind it -->
+        <!-- Left: Logo -->
         <div class="lg:col-span-5 flex justify-center lg:justify-start relative">
-          <!-- Strong glow halo behind gorilla -->
+          <!-- Strong glow halo behind logo -->
           <div class="absolute inset-0 flex items-center justify-center lg:justify-start pointer-events-none">
             <div class="w-[480px] h-[480px] rounded-full blur-3xl opacity-50" style="background: radial-gradient(circle, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.4) 25%, rgba(180,190,150,0.3) 40%, transparent 70%);"></div>
             <div class="absolute w-[400px] h-[400px] rounded-full blur-2xl opacity-60" style="background: radial-gradient(circle, rgba(255,255,255,0.5) 0%, rgba(180,190,150,0.3) 30%, transparent 60%);"></div>
           </div>
-          <img
-            src="/Asset-3.svg"
-            alt="Gorilla silhouette"
+          <img 
+            src="/Asset-3.svg" 
+            alt="Linked Guerrilla Logo" 
             class="w-[380px] max-w-full h-auto relative z-10"
-            style="
-              filter:
-                brightness(0) saturate(100%) invert(42%) sepia(8%) saturate(1200%) hue-rotate(40deg) brightness(0.9) contrast(1.1)
-                drop-shadow(0 10px 40px rgba(0,0,0,0.6));
-              opacity: 0.95;
-            "
+            style="filter: brightness(1);"
           />
+          <!-- Linked Guerilla text overlapping bottom of gorilla -->
+          <div class="absolute bottom-0 z-20 flex items-baseline" style="left: 1.5rem; transform: translateY(25%);">
+            <span class="text-gray-900 font-semibold text-5xl tracking-tight mr-1">Linked</span>
+            <div class="bg-[#008000] rounded-lg py-2">
+              <span class="text-white font-semibold text-5xl tracking-tight">Guerilla</span>
+            </div>
+          </div>
         </div>
 
         <!-- Right: Centered headline block (like the mockup) -->
         <div class="lg:col-span-7 text-center lg:text-left">
           <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight text-white" style="text-shadow: 0 0 30px rgba(255,255,255,0.5), 0 0 60px rgba(255,255,255,0.3), 0 0 90px rgba(255,255,255,0.15);">
-            <span class="text-[#6B7E4F]" style="text-shadow: none;">LinkedIn</span> Management
+            <span style="color:black !important; text-shadow: none;">LinkedIn</span> Management
           </h1>
 
           <p class="text-xl md:text-2xl mt-5 text-white/85">
