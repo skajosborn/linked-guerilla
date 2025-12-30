@@ -90,7 +90,7 @@ export default function RotatingReviews() {
         {displayedReviews.map((review, idx) => (
           <div
             key={`${review.id}-${currentIndex}-${idx}`}
-            className="bg-gray-900 border-2 border-[#6B7E4F] rounded-lg p-6 shadow-md transition-all duration-500"
+            className="bg-gray-900 rounded-lg p-6 shadow-md transition-all duration-500"
           >
             {/* Stars */}
             <div className="flex gap-1 mb-4">
@@ -107,7 +107,7 @@ export default function RotatingReviews() {
             </div>
             
             {/* Title */}
-            <h3 className="text-lg font-bold text-primary-300 mb-3">
+            <h3 className="text-lg font-bold text-[#00D9FF] mb-3">
               {review.title}
             </h3>
             
