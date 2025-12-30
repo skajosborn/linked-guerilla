@@ -14,56 +14,55 @@ import RotatingReviews from '../components/RotatingReviews';
 
   <!-- Hero background -->
   <div
-    class="relative text-white min-h-[500px] flex items-center bg-gray-400"
+    class="relative text-white min-h-[500px] flex items-center overflow-hidden"
+    style="background: #000000;"
   >
 
-    <div class="container mx-auto px-4 relative z-10">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-        <!-- Left: Logo -->
-        <div class="lg:col-span-5 flex justify-center lg:justify-start relative">
-          <!-- Strong glow halo behind logo -->
+    <div class="container mx-auto px-4 relative z-10 py-8 md:py-12">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center">
+        <!-- Left: Logo - Hidden on mobile, shown on larger screens -->
+        <div class="lg:col-span-5 hidden lg:flex justify-center lg:justify-start relative">
+          <!-- Subtle glow halo behind gorilla -->
           <div class="absolute inset-0 flex items-center justify-center lg:justify-start pointer-events-none">
-            <div class="w-[480px] h-[480px] rounded-full blur-3xl opacity-50" style="background: radial-gradient(circle, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.4) 25%, rgba(180,190,150,0.3) 40%, transparent 70%);"></div>
-            <div class="absolute w-[400px] h-[400px] rounded-full blur-2xl opacity-60" style="background: radial-gradient(circle, rgba(255,255,255,0.5) 0%, rgba(180,190,150,0.3) 30%, transparent 60%);"></div>
+            <div class="w-[480px] h-[480px] rounded-full blur-3xl opacity-20" style="background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%);"></div>
           </div>
-          <img 
-            src="/Asset-3.svg" 
-            alt="Linked Guerrilla Logo" 
-            class="w-[380px] max-w-full h-auto relative z-10"
-            style="filter: brightness(1);"
-          />
-          <!-- Linked Guerilla text overlapping bottom of gorilla -->
-          <div class="absolute bottom-0 z-20 flex items-baseline" style="left: 1.5rem; transform: translateY(25%);">
-            <span class="text-gray-900 font-semibold text-5xl tracking-tight mr-1">Linked</span>
-            <div class="bg-[#008000] rounded-lg py-2">
-              <span class="text-white font-semibold text-5xl tracking-tight">Guerilla</span>
-            </div>
+          <div class="relative w-[550px] max-w-full" style="display: inline-block; margin-left: 20px;">
+            <video 
+              src="/linkedinfluid2.mp4" 
+              autoplay
+              muted
+              playsinline
+              class="w-full h-auto"
+              style="filter: brightness(1) contrast(1); display: block; vertical-align: top;"
+            >
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
 
-        <!-- Right: Centered headline block (like the mockup) -->
-        <div class="lg:col-span-7 text-center lg:text-left">
-          <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight text-white" style="text-shadow: 0 0 30px rgba(255,255,255,0.5), 0 0 60px rgba(255,255,255,0.3), 0 0 90px rgba(255,255,255,0.15);">
-            <span style="color:black !important; text-shadow: none;">LinkedIn</span> Management
+        <!-- Right: Centered headline block -->
+        <div class="lg:col-span-7 lg:col-start-6 text-center lg:text-left">
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white">
+            Turn <span style="color:#20B2AA; text-shadow: 0 0 5px rgba(32,178,170,0.5), 0 0 10px rgba(32,178,170,0.3);">LinkedIn</span> Into<br />a Lead Machine
           </h1>
 
-          <p class="text-xl md:text-2xl mt-5 text-white/85">
-            Maximize B2B Leads, Sales, and Hiring
+          <p class="text-lg sm:text-xl md:text-2xl mt-4 md:mt-5 text-white/85">
+            AI-powered LinkedIn management for founders,<br />teams, and recruiters who want real results.
           </p>
 
-          <div class="mt-9 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+          <div class="mt-6 md:mt-9 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <a
               href="#contact"
-              class="bg-[#f4f4f1] text-[#1f2326] px-8 py-3 rounded-lg font-semibold hover:bg-white transition shadow-sm"
+              class="bg-[#4a4a4a] text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg font-semibold hover:bg-[#5a5a5a] transition shadow-sm text-sm sm:text-base"
             >
-              Get Started Today
+              Book Free Strategy Call
             </a>
 
             <a
               href="#services"
-              class="bg-[#1f2326] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#2a2d2f] transition shadow-sm"
+              class="bg-[#1f2326] text-white px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg font-semibold hover:bg-[#2a2d2f] transition shadow-sm text-sm sm:text-base"
             >
-              Learn More
+              See How It Works
             </a>
           </div>
         </div>
@@ -86,7 +85,7 @@ import RotatingReviews from '../components/RotatingReviews';
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Prospecting -->
         <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
-          <div class="w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center mb-4">
+          <div class="w-12 h-12 bg-[#20B2AA] rounded-lg flex items-center justify-center mb-4">
             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
             </svg>
@@ -99,7 +98,7 @@ import RotatingReviews from '../components/RotatingReviews';
 
         <!-- 20 Invites/Day -->
         <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
-          <div class="w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center mb-4">
+          <div class="w-12 h-12 bg-[#20B2AA] rounded-lg flex items-center justify-center mb-4">
             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>
             </svg>
@@ -112,7 +111,7 @@ import RotatingReviews from '../components/RotatingReviews';
 
         <!-- Follow-up -->
         <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
-          <div class="w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center mb-4">
+          <div class="w-12 h-12 bg-[#20B2AA] rounded-lg flex items-center justify-center mb-4">
             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
@@ -125,7 +124,7 @@ import RotatingReviews from '../components/RotatingReviews';
 
         <!-- Endorsement Exposure -->
         <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
-          <div class="w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center mb-4">
+          <div class="w-12 h-12 bg-[#20B2AA] rounded-lg flex items-center justify-center mb-4">
             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"></path>
             </svg>
@@ -138,7 +137,7 @@ import RotatingReviews from '../components/RotatingReviews';
 
         <!-- Turnkey -->
         <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
-          <div class="w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center mb-4">
+          <div class="w-12 h-12 bg-[#20B2AA] rounded-lg flex items-center justify-center mb-4">
             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z"></path>
             </svg>
@@ -151,7 +150,7 @@ import RotatingReviews from '../components/RotatingReviews';
 
         <!-- Maximal, Optimized, Legal -->
         <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
-          <div class="w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center mb-4">
+          <div class="w-12 h-12 bg-[#20B2AA] rounded-lg flex items-center justify-center mb-4">
             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
             </svg>
@@ -166,103 +165,114 @@ import RotatingReviews from '../components/RotatingReviews';
   </section>
 
   <!-- How It Works Section -->
-  <section id="how-it-works" class="py-12 bg-white">
+  <section id="how-it-works" class="py-20" style="background:rgb(6, 7, 7);">
     <div class="container mx-auto px-4">
-      <div class="max-w-6xl mx-auto">
-        <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">How it works</h2>
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-4xl md:text-5xl font-bold text-white mb-16 text-center">How it Works</h2>
         
-        <div class="relative grid grid-cols-1 md:grid-cols-3 grid-rows-2 gap-6 items-center justify-items-center max-w-5xl mx-auto">
-          <!-- Top Left - Step 1: Find Prospects -->
-          <div class="bg-primary-50 p-4 rounded-lg shadow-md hover:scale-105 transition-all duration-300 md:col-start-1 md:row-start-1 md:justify-self-end">
-            <div class="flex gap-3">
-              <div class="flex-shrink-0">
-                <div class="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center">
-                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                  </svg>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <!-- Left Side - Steps List -->
+          <div class="relative">
+            <!-- Vertical connecting line -->
+            <div class="absolute left-6 top-12 bottom-12 w-0.5 bg-white/20"></div>
+            
+            <div class="space-y-8">
+              <!-- Step 1: Find High-Intent Prospects -->
+              <div class="flex gap-6 items-start">
+                <div class="relative z-10 flex-shrink-0">
+                  <div class="w-12 h-12 rounded-full bg-[#00D9FF] flex items-center justify-center text-white font-bold text-lg" style="box-shadow: 0 0 15px rgba(0,217,255,0.6), 0 0 30px rgba(0,217,255,0.3);">
+                    1
+                  </div>
+                </div>
+                <div class="flex-1 pt-1">
+                  <h3 class="text-xl font-bold text-white mb-2">Find High-Intent Prospects</h3>
+                  <p class="text-white/90 text-base">
+                    We identify decision-makers using Linkedin signals, intent data, and advanced filters — not scraped lists.
+                  </p>
                 </div>
               </div>
-              <div>
-                <h3 class="text-lg font-bold text-primary-600 mb-2">Find Prospects</h3>
-                <p class="text-sm text-gray-600">
-                  Identify new prospects using the full power of LinkedIn's database... or something better. We use 20 databases to ensure that your audience is qualified and hot.
-                </p>
+
+              <!-- Step 2: Engage -->
+              <div class="flex gap-6 items-start">
+                <div class="relative z-10 flex-shrink-0">
+                  <div class="w-12 h-12 rounded-full bg-[#00D9FF] flex items-center justify-center text-white font-bold text-lg" style="box-shadow: 0 0 15px rgba(0,217,255,0.6), 0 0 30px rgba(0,217,255,0.3);">
+                    2
+                  </div>
+                </div>
+                <div class="flex-1 pt-1">
+                  <h3 class="text-xl font-bold text-white mb-1">Engage</h3>
+                  <p class="text-white/80 text-sm mb-2 italic">Craft Messages That Sound Human</p>
+                  <p class="text-white/90 text-base">
+                    We write and test messaging that starts conversations, not spam. Every sequence is approved by you.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 3: Automate -->
+              <div class="flex gap-6 items-start">
+                <div class="relative z-10 flex-shrink-0">
+                  <div class="w-12 h-12 rounded-full bg-[#00D9FF] flex items-center justify-center text-white font-bold text-lg" style="box-shadow: 0 0 15px rgba(0,217,255,0.6), 0 0 30px rgba(0,217,255,0.3);">
+                    3
+                  </div>
+                </div>
+                <div class="flex-1 pt-1">
+                  <h3 class="text-xl font-bold text-white mb-1">Automate</h3>
+                  <p class="text-white/80 text-sm mb-2 italic">AI-Powered Outreach & Follow-Ups</p>
+                  <p class="text-white/90 text-base">
+                    Our system runs daily outreach, handles follow-ups, and surfaces replies — without risking your account.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Step 4: Convert -->
+              <div class="flex gap-6 items-start">
+                <div class="relative z-10 flex-shrink-0">
+                  <div class="w-12 h-12 rounded-full bg-[#00D9FF] flex items-center justify-center text-white font-bold text-lg" style="box-shadow: 0 0 15px rgba(0,217,255,0.6), 0 0 30px rgba(0,217,255,0.3);">
+                    4
+                  </div>
+                </div>
+                <div class="flex-1 pt-1">
+                  <h3 class="text-xl font-bold text-white mb-1">Convert</h3>
+                  <p class="text-white/80 text-sm mb-2 italic">Turn Replies Into Booked Calls</p>
+                  <p class="text-white/90 text-base">
+                    Warm conversations land directly on your calendar. You focus on closing — we handle the rest.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
-          <!-- Top Right - Step 2: Write Messaging -->
-          <div class="bg-primary-50 p-4 rounded-lg shadow-md hover:scale-105 transition-all duration-300 md:col-start-3 md:row-start-1 md:justify-self-start">
-            <div class="flex gap-3">
-              <div class="flex-shrink-0">
-                <div class="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center">
-                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path>
-                  </svg>
-                </div>
-              </div>
-              <div>
-                <h3 class="text-lg font-bold text-primary-600 mb-2">Write Messaging</h3>
-                <p class="text-sm text-gray-600">
-                  We don't squabble over messaging, we collaborate with a combined 20+ years experience in copywriting. We ensure your messaging is optimized and accurate on our setup call.
-                </p>
-              </div>
-            </div>
+          <!-- Right Side - Gorilla Graphic -->
+          <div class="flex items-center justify-center lg:justify-end">
+            <video 
+              src="/data.mp4" 
+              autoplay
+              loop
+              muted
+              playsinline
+              class="w-full max-w-lg h-auto"
+            >
+              Your browser does not support the video tag.
+            </video>
           </div>
+        </div>
 
-          <!-- Center - Image -->
-          <div class="md:col-start-2 md:row-start-1 md:row-span-2 flex items-center justify-center">
-            <img 
-              src="/gorillabluenobg.png" 
-              alt="Linked Guerilla" 
-              class="w-full max-w-xs h-auto"
-            />
-          </div>
-
-          <!-- Bottom Left - Step 3: Consultation -->
-          <div class="bg-primary-50 p-4 rounded-lg shadow-md hover:scale-105 transition-all duration-300 md:col-start-1 md:row-start-2 md:justify-self-end">
-            <div class="flex gap-3">
-              <div class="flex-shrink-0">
-                <div class="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center">
-                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
-                  </svg>
-                </div>
-              </div>
-              <div>
-                <h3 class="text-lg font-bold text-primary-600 mb-2">Consultation</h3>
-                <p class="text-sm text-gray-600">
-                  We need to talk. After all, if we're going to be managing your LinkedIn account, we should be in touch. The total time commitment is 30m to see if we can help and a 1h setup call. After that, we keep in touch at a cadence of your preference.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Bottom Right - Step 4: Follow Up -->
-          <div class="bg-primary-50 p-4 rounded-lg shadow-md hover:scale-105 transition-all duration-300 md:col-start-3 md:row-start-2 md:justify-self-start">
-            <div class="flex gap-3">
-              <div class="flex-shrink-0">
-                <div class="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center">
-                  <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                  </svg>
-                </div>
-              </div>
-              <div>
-                <h3 class="text-lg font-bold text-primary-600 mb-2">Follow Up</h3>
-                <p class="text-sm text-gray-600">
-                  As the campaign runs, you can expect several responses per day. Unless you're on the concierge plan, that's up to you to respond: we only send the messaging you've approved. While we save 12h/wk of your time, you'll still need about 20m/day to book your warm leads.
-                </p>
-              </div>
-            </div>
-          </div>
+        <!-- Bottom Right - Call to Action -->
+        <div class="mt-16 text-center lg:text-right">
+          <p class="text-white text-xl mb-6">Ready to turn Linkedin into a predictable lead channel?</p>
+          <a
+            href="#contact"
+            class="inline-block bg-[#4a4a4a] text-white px-8 py-3 rounded-lg font-semibold hover:bg-[#5a5a5a] transition shadow-lg"
+          >
+            Book Free Strategy Call
+          </a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Interactive Messaging Section -->
-  <section id="messaging-demo" class="py-20 bg-primary-200">
+  <section id="messaging-demo" class="py-20 bg-primary-50">
     <div class="container mx-auto px-4">
       <div class="max-w-6xl mx-auto">
         <div class="text-center mb-12">
@@ -278,28 +288,28 @@ import RotatingReviews from '../components/RotatingReviews';
 
         <div class="mt-12 grid grid-cols-1 md:grid-cols-4 gap-6">
           <div class="text-center">
-            <div class="w-16 h-16 bg-primary-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+            <div class="w-16 h-16 bg-[#20B2AA] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
               1
             </div>
             <h3 class="font-semibold text-gray-900 mb-2">Discovery</h3>
             <p class="text-sm text-gray-600">We understand your business and target market</p>
           </div>
           <div class="text-center">
-            <div class="w-16 h-16 bg-primary-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+            <div class="w-16 h-16 bg-[#20B2AA] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
               2
             </div>
             <h3 class="font-semibold text-gray-900 mb-2">Identify</h3>
             <p class="text-sm text-gray-600">We find and qualify high-quality leads</p>
           </div>
           <div class="text-center">
-            <div class="w-16 h-16 bg-primary-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+            <div class="w-16 h-16 bg-[#20B2AA] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
               3
             </div>
             <h3 class="font-semibold text-gray-900 mb-2">Engage</h3>
             <p class="text-sm text-gray-600">We craft personalized outreach campaigns</p>
           </div>
           <div class="text-center">
-            <div class="w-16 h-16 bg-primary-600 text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+            <div class="w-16 h-16 bg-[#20B2AA] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
               4
             </div>
             <h3 class="font-semibold text-gray-900 mb-2">Deliver</h3>
@@ -317,7 +327,16 @@ import RotatingReviews from '../components/RotatingReviews';
         <div class="text-center mb-12">
           <h2 class="text-4xl font-bold text-gray-900 mb-4">Most people get:</h2>
           <div class="flex justify-center mt-6">
-            <img src="/gorilla3color.png" alt="Linked Guerilla" class="h-64 w-auto" />
+            <video 
+              src="/ai.mp4" 
+              autoplay
+              loop
+              muted
+              playsinline
+              class="h-64 w-auto"
+            >
+              Your browser does not support the video tag.
+            </video>
           </div>
         </div>
         
@@ -443,7 +462,7 @@ import RotatingReviews from '../components/RotatingReviews';
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
           <!-- Basic Plan -->
-          <div class="bg-primary-600 rounded-xl p-6 hover:shadow-lg transition-all duration-300">
+          <div class="bg-[#20B2AA] rounded-xl p-6 hover:shadow-lg transition-all duration-300">
             <div class="text-center mb-4">
               <h3 class="text-lg font-bold text-white mb-2">Basic</h3>
               <div class="text-3xl font-bold text-white mb-1">$500/mo</div>
@@ -490,7 +509,7 @@ import RotatingReviews from '../components/RotatingReviews';
 
           <!-- Concierge Plan -->
           <div class="bg-gray-900 rounded-xl p-6 hover:shadow-lg transition-all duration-300 relative">
-            <div class="absolute top-0 right-0 bg-primary-600 text-white px-4 py-1 rounded-bl-lg rounded-tr-xl text-sm font-semibold">
+            <div class="absolute top-0 right-0 bg-[#20B2AA] text-white px-4 py-1 rounded-bl-lg rounded-tr-xl text-sm font-semibold">
               Popular
             </div>
             <div class="text-center mb-4">
@@ -626,7 +645,7 @@ import RotatingReviews from '../components/RotatingReviews';
             
             <button 
               type="submit"
-              class="w-full bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition"
+              class="w-full bg-[#20B2AA] text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-700 transition"
             >
               Send Message
             </button>
@@ -640,4 +659,6 @@ import RotatingReviews from '../components/RotatingReviews';
 
   <Footer />
 </Layout>
+
+
 
